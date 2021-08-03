@@ -1,17 +1,25 @@
-class Solution {
+// https://leetcode.com/problems/reverse-integer/
+class Solution
+{
 public:
-    int reverse(int x) {
+    int reverse(int x)
+    {
 
         int reverseDigit = 0;
 
-        while (x) {
-            try {
-                if (reverseDigit > INT_MAX / 10 || reverseDigit < INT_MIN / 10) {
+        while (x)
+        {
+            try
+            {
+                if (reverseDigit > INT_MAX / 10 || reverseDigit < INT_MIN / 10)
+                {
                     throw 0;
                 }
                 reverseDigit = reverseDigit * 10 + x % 10;
                 x = x / 10;
-            } catch (int x) {
+            }
+            catch (int x)
+            {
                 return 0;
             }
         }
