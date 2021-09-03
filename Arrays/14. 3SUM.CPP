@@ -1,7 +1,10 @@
-// https://leetcode.com/problems/3sum/
-**Brute force **
+// // https://leetcode.com/problems/3sum/
+// **Brute force **
 
-```
+// ```
+#include <iostream>
+using namespace std;
+class threeSome
 {
     sort(nums.begin(), nums.end());
     set<vector<int> > ans;
@@ -27,14 +30,14 @@
     }
     return (realAns);
 }
-``` TIME COMPLEXITY : O(N ^ 3 + NLOGN)
+// ``` TIME COMPLEXITY : O(N ^ 3 + NLOGN)
 
-                      *
-                      *Ussing Map and Set Solution **O(N ^ 2) Solution
-   ``` set<vector<int> > ansSet;
+//                       *
+//                       *Ussing Map and Set Solution **O(N ^ 2) Solution
+//    ``` set<vector<int> > ansSet;
 
-public:
-vector<vector<int> > threeSum(vector<int> &nums)
+public : vector<vector<int> >
+         threeSum(vector<int> &nums)
 {
 
     if (nums.size() < 3)
@@ -71,11 +74,11 @@ vector<vector<int> > threeSum(vector<int> &nums)
 
     return ans;
 }
-```
+// ```
 
-    **TWO POINTER'S APPROACH**
-``` vector<vector<int> >
-    threeSum(vector<int> &num)
+//     **TWO POINTER'S APPROACH**
+// ``` vector<vector<int> >
+int threeSum(vector<int> &num)
 {
 
     vector<vector<int> > res;
@@ -125,4 +128,3 @@ vector<vector<int> > threeSum(vector<int> &nums)
 
     return res;
 }
-```
