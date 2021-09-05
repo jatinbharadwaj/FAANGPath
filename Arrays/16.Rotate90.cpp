@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/rotate-image/submissions/
 #include <iostream>
+#include <vecotor>
 using namespace std;
 //<======================  APPROACH ========================>
 /* 
